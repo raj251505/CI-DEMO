@@ -1,0 +1,15 @@
+name: CI Pipeline
+on:
+push:
+jobs:
+branches:
+build:
+main
+runs-on: ubuntu-latest
+steps:
+uses: actions/checkout@v4
+-
+name: Display Message
+run: echo "Continuous Integration Pipeline Executed Successfully"
+name: List Files
+run: ls
